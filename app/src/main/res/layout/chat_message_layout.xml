@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messageParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingLeft="5dp">
+
+    <TextView
+        android:id="@+id/chatMessage"
+        android:text="hi man, how are you? lets see how well you can roll down the hill."
+        android:background="@drawable/their_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/sentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="11:40"
+        android:textSize="10sp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/chatMessage"
+        app:layout_constraintLeft_toRightOf="@+id/chatMessage" />
+
+    <ImageView
+        android:id="@+id/delivered"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/singletick"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+
+</LinearLayout>

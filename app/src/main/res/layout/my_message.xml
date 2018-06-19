@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/messageChildLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/sentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chatMessage"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom"
+            android:text="8:20 AM"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/chatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/my_message"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:text="Placeholder message"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/statusIcon"-->
+        <!--android:layout_width="12dp"-->
+        <!--android:layout_height="12dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginLeft="5dp" />-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
